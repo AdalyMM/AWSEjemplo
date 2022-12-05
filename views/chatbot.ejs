@@ -1,0 +1,74 @@
+<div class="fabs">
+  <div class="chat">
+      <div class="chat_header">
+          <div class="chat_option">
+              <div class="header_img">
+                  <img src="img/mon.png" alt="imagen">
+              </div>
+              <span id="chat_head">MON</span> <br />
+              <span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i
+                      class="fullscreen zmdi zmdi-window-maximize"></i></span>
+          </div>
+      </div>
+      <!--<div class="chat_body chat_login">
+          <a id="chat_first_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>
+          <p>
+              Haz clic en la flecha para conversar.
+          </p>
+      </div>-->
+      <div id="chat_converse" class="chat_conversion chat_converse">
+          <!--<a id="chat_second_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>-->
+          <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                  <img src="img/mon.png" alt="imagenChat" />
+              </div>
+              Hola, tengo un tema sugerido para ti, puedes darle clic si te interesa:
+              <ul>
+                  <li>
+                      <a href="#" class="temasPredefinidos" onclick="chatFuncion();">
+                          <span>¿Cómo funciona el chat?</span>
+                      </a>
+                  </li>
+                  <!--<li>
+                      <a href="#" class="temasPredefinidos" onclick="saludSexual();">
+                          <span>Salud sexual y reproductiva.</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="temasPredefinidos" onclick="embarazos();">
+                          <span>Embarazos no deseados</span>
+                      </a>
+                  </li1>-->
+              </ul>
+          </span>
+          <!-- De prueba -->
+          <!--<span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                  <img src="img/mon.png" alt="imagenChat" />
+              </div>
+              Escribe alguna pregunta.
+              <ul>
+                  <% var array=[]; preguntas.forEach(resultado=> {
+                      array.push({pregunta: resultado.pregunta, respuesta: resultado.respuesta}); %>
+                      <% }) %>
+                             <!-- <li><a href="#" onclick="datosBD('<%= JSON.stringify(array) %>');"> 
+              </ul>
+          </span>-->
+          <div id="pruebaSe">
+
+          </div>
+      </div>
+      <div class="fab_field">
+          <!--<a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a>-->
+          <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send" id="enviar"></i></a>
+          <textarea id="chatSend" name="chat_message" placeholder="Escribe algo..." class="chat_field chat_message" wrap="hard"></textarea>
+      </div>
+      <!--<div class="fab_field">
+        <form id="campoDeMensajes">
+            <textarea id="chatSend" name="chat_message" placeholder="Escribe algo..." class="chat_field chat_message"></textarea>
+            <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send" id="enviar" onclick="preguntas('<%= JSON.stringify(array) %>')";></i></a>
+        </form>
+    </div> -->
+  </div>
+  <a id="prime" class="fab" accesskey="1"><i class="prime zmdi zmdi-comment-outline"></i></a>
+</div>
